@@ -42,7 +42,7 @@ namespace LibraryManagementSystem.Controllers
             book.ISBN = updatedBook.ISBN;
             book.IsAvailable = updatedBook.IsAvailable;
             book.Stock = updatedBook.Stock;
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(); 
             return NoContent();
         }
 
