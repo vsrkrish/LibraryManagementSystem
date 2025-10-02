@@ -5,7 +5,7 @@ on:
     branches:
       - master   # or master, or your deploy branch
       
-paths-ignore:
+    paths-ignore:
       - 'appsettings*.json'
 jobs:
   build-and-deploy:
