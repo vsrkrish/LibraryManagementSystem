@@ -54,26 +54,35 @@ The database is seeded with popular titles like:
 - Sapiens by Yuval Noah Harari
 - The Hobbit by J.R.R. Tolkien
 You can customize this in OnModelCreating() inside LibraryDbContext.cs.
+
+
 📬 API Highlights
+
 🔄 Borrow Book
+
 POST /api/Borrow
 
-
-{
+**{
   "memberId": 101,
   "bookIds": [1, 2, 3]
-}
+}**
 
 
 📞 Get Borrowers of a Book
 GET /api/Borrow/borrowers/{bookId}
 
 
-🔍 Search Books by Title
-GET /api/Books/search?title=life
-
+🔍 Get all the Books
+GET /api/Books
+http://108.181.168.224/lib/api/Books
 
 
 🧪 Testing
 Use Postman or Swagger to test endpoints. All operations are async and follow RESTful conventions.
+
+**Note:**
+I also provided deployed (into IIS) version of swagger url in the email.
+
+I also Provided deployed (Linux nginx) version of swagger url in the email.
+
 
