@@ -28,7 +28,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "./publish/*"
-          target: "/var/www/myapp"
+          target: "/var/www/library"
 
       - name: Restart service
         uses: appleboy/ssh-action@v0.1.7
