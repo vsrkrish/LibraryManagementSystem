@@ -63,7 +63,7 @@ You can customize this in OnModelCreating() inside LibraryDbContext.cs.
 POST /api/Borrow
 
 **{
-  "memberId": 101,
+  "memberId": 1,
   "bookIds": [1, 2, 3]
 }**
 
